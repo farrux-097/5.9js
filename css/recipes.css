@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containers{
+    width: 1200px;
+    margin: 20px auto;
+}
+
+body{
+    background: #020024;
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+.site-header{
+    background: #020024;
+background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+}
+
+
+.wrapper,
+.skeleton{
+    max-width: 1200px;
+    width: 100%;
+    margin: 20px auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap ;
+    justify-content: center;
+}
+
+.card,
+.skeleton__item{
+    width: 300px;
+    border: 1px solid #ddd;
+    background: #ddd;
+    padding: 12px;
+    border-radius: 20px;
+    box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)
+}
+.card img,
+.skeleton__image{
+width: 100%;
+height: 250px;
+object-fit: contain;
+}
+
+.card:hover{
+    box-shadow: 0 25px 50px -12px rgba(128, 5, 5, 0.25);
+}
+
+.skeleton__line{
+    width: 80%;
+    height: 20px;
+    margin-top: 5px;
+    border-radius: 20px;
+}
+.skeleton__line:last-child{
+    width: 70%;
+}
+.skeleton__line:first-child{
+    width: 100%;
+}
+
+.skeleton__animation{
+    background:linear-gradient(90deg, #ccc, #ddd, #ccc);
+    animation:skeletonAnimation 1s linear  infinite ;
+    background-size: 200%;
+}
+@keyframes skeletonAnimation{
+    to{
+        background-position: 200%;
+    }
+}
+
+
+.collection li{
+    background-color: rgb(222, 236, 211);
+    color: black;
+    text-wrap: nowrap;
+    border: 1px solid white;
+    padding: 3px;
+    border-radius: 20px;
+    margin-bottom: 5px;
+}
